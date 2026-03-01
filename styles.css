@@ -6,6 +6,10 @@
 body{
        background: linear-gradient(to right, #4facfe, #00f2fe);
 }
+body.dark{
+       background: #000;
+       color: white;
+}
 .container{
     width: 400px;
     height: 400px;
@@ -38,3 +42,10 @@ button{
     gap:20px;
     font-size: 1.2rem;
 }
+.dark-mode {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}   

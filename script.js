@@ -32,3 +32,18 @@ async function fun(cityName){
         console.log(err)
     }
 }
+
+const darkModeBtn = document.querySelector(".dark-mode")
+
+darkModeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark")
+    if (document.body.classList.contains("dark")) {
+        document.body.style.backgroundColor = "black"
+        document.body.style.color = "black"
+        darkModeBtn.textContent = "☀️"
+    } else {
+        // document.body.style.backgroundColor = "white"
+        document.body.style.color = "black"
+        darkModeBtn.textContent = "🌙"
+    }
+})
